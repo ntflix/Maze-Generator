@@ -9,21 +9,32 @@
 /* Begin PBXBuildFile section */
 		DC382AE524DD87CF00BE21C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382AE424DD87CF00BE21C6 /* AppDelegate.swift */; };
 		DC382AE724DD87CF00BE21C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382AE624DD87CF00BE21C6 /* SceneDelegate.swift */; };
-		DC382AE924DD87CF00BE21C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382AE824DD87CF00BE21C6 /* ViewController.swift */; };
 		DC382AEC24DD87CF00BE21C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC382AEA24DD87CF00BE21C6 /* Main.storyboard */; };
 		DC382AEE24DD87D100BE21C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC382AED24DD87D100BE21C6 /* Assets.xcassets */; };
 		DC382AF124DD87D100BE21C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC382AEF24DD87D100BE21C6 /* LaunchScreen.storyboard */; };
+		DC382AFF24DDA19100BE21C6 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382AFE24DDA19100BE21C6 /* Stack.swift */; };
+		DC382B0124DDA19D00BE21C6 /* MazeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382B0024DDA19D00BE21C6 /* MazeCell.swift */; };
+		DC84681924DDC32900263757 /* Adjacency List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681824DDC32900263757 /* Adjacency List.swift */; };
+		DC84681B24DDEB1800263757 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681A24DDEB1800263757 /* Maze.swift */; };
+		DC84681E24DDF88B00263757 /* Maze Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681D24DDF88B00263757 /* Maze Generator.swift */; };
+		DC84682024E00E3100263757 /* MazeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681F24E00E3100263757 /* MazeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC382AE124DD87CF00BE21C6 /* GoreGraphicsStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoreGraphicsStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC382AE424DD87CF00BE21C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC382AE624DD87CF00BE21C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC382AE824DD87CF00BE21C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC382AEB24DD87CF00BE21C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC382AED24DD87D100BE21C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC382AF024DD87D100BE21C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC382AF224DD87D100BE21C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC382AF824DD94CE00BE21C6 /* GoreGraphicsStuff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoreGraphicsStuff.entitlements; sourceTree = "<group>"; };
+		DC382AFE24DDA19100BE21C6 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		DC382B0024DDA19D00BE21C6 /* MazeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeCell.swift; sourceTree = "<group>"; };
+		DC84681824DDC32900263757 /* Adjacency List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjacency List.swift"; sourceTree = "<group>"; };
+		DC84681A24DDEB1800263757 /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+		DC84681D24DDF88B00263757 /* Maze Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maze Generator.swift"; sourceTree = "<group>"; };
+		DC84681F24E00E3100263757 /* MazeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +67,29 @@
 		DC382AE324DD87CF00BE21C6 /* GoreGraphicsStuff */ = {
 			isa = PBXGroup;
 			children = (
+				DC382AF824DD94CE00BE21C6 /* GoreGraphicsStuff.entitlements */,
 				DC382AE424DD87CF00BE21C6 /* AppDelegate.swift */,
 				DC382AE624DD87CF00BE21C6 /* SceneDelegate.swift */,
-				DC382AE824DD87CF00BE21C6 /* ViewController.swift */,
+				DC84681F24E00E3100263757 /* MazeView.swift */,
+				DC382AFD24DDA18100BE21C6 /* Maze Stuff */,
 				DC382AEA24DD87CF00BE21C6 /* Main.storyboard */,
 				DC382AED24DD87D100BE21C6 /* Assets.xcassets */,
 				DC382AEF24DD87D100BE21C6 /* LaunchScreen.storyboard */,
 				DC382AF224DD87D100BE21C6 /* Info.plist */,
 			);
 			path = GoreGraphicsStuff;
+			sourceTree = "<group>";
+		};
+		DC382AFD24DDA18100BE21C6 /* Maze Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				DC84681D24DDF88B00263757 /* Maze Generator.swift */,
+				DC382AFE24DDA19100BE21C6 /* Stack.swift */,
+				DC382B0024DDA19D00BE21C6 /* MazeCell.swift */,
+				DC84681A24DDEB1800263757 /* Maze.swift */,
+				DC84681824DDC32900263757 /* Adjacency List.swift */,
+			);
+			path = "Maze Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC382AE924DD87CF00BE21C6 /* ViewController.swift in Sources */,
 				DC382AE524DD87CF00BE21C6 /* AppDelegate.swift in Sources */,
+				DC84681924DDC32900263757 /* Adjacency List.swift in Sources */,
+				DC382AFF24DDA19100BE21C6 /* Stack.swift in Sources */,
+				DC84681E24DDF88B00263757 /* Maze Generator.swift in Sources */,
 				DC382AE724DD87CF00BE21C6 /* SceneDelegate.swift in Sources */,
+				DC84681B24DDEB1800263757 /* Maze.swift in Sources */,
+				DC84682024E00E3100263757 /* MazeView.swift in Sources */,
+				DC382B0124DDA19D00BE21C6 /* MazeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,15 +314,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoreGraphicsStuff/GoreGraphicsStuff.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78D5X4L92;
 				INFOPLIST_FILE = GoreGraphicsStuff/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iron59.GoreGraphicsStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +335,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoreGraphicsStuff/GoreGraphicsStuff.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78D5X4L92;
 				INFOPLIST_FILE = GoreGraphicsStuff/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iron59.GoreGraphicsStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
