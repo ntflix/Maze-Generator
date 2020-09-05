@@ -14,6 +14,8 @@
 		DC382AF124DD87D100BE21C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC382AEF24DD87D100BE21C6 /* LaunchScreen.storyboard */; };
 		DC382AFF24DDA19100BE21C6 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382AFE24DDA19100BE21C6 /* Stack.swift */; };
 		DC382B0124DDA19D00BE21C6 /* MazeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC382B0024DDA19D00BE21C6 /* MazeCell.swift */; };
+		DC4F7ECF24E44D8000B043E9 /* Recursive Backtracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4F7ECE24E44D8000B043E9 /* Recursive Backtracker.swift */; };
+		DC69BCAC24E44E6E00720331 /* Aldous-Broder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69BCAB24E44E6E00720331 /* Aldous-Broder.swift */; };
 		DC84681924DDC32900263757 /* Adjacency List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681824DDC32900263757 /* Adjacency List.swift */; };
 		DC84681B24DDEB1800263757 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681A24DDEB1800263757 /* Maze.swift */; };
 		DC84681E24DDF88B00263757 /* Maze Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC84681D24DDF88B00263757 /* Maze Generator.swift */; };
@@ -21,16 +23,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC382AE124DD87CF00BE21C6 /* GoreGraphicsStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoreGraphicsStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC382AE124DD87CF00BE21C6 /* MazeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC382AE424DD87CF00BE21C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC382AE624DD87CF00BE21C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC382AEB24DD87CF00BE21C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC382AED24DD87D100BE21C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC382AF024DD87D100BE21C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC382AF224DD87D100BE21C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC382AF824DD94CE00BE21C6 /* GoreGraphicsStuff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoreGraphicsStuff.entitlements; sourceTree = "<group>"; };
+		DC382AF824DD94CE00BE21C6 /* MazeGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MazeGenerator.entitlements; sourceTree = "<group>"; };
 		DC382AFE24DDA19100BE21C6 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		DC382B0024DDA19D00BE21C6 /* MazeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeCell.swift; sourceTree = "<group>"; };
+		DC4F7ECE24E44D8000B043E9 /* Recursive Backtracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recursive Backtracker.swift"; sourceTree = "<group>"; };
+		DC69BCAB24E44E6E00720331 /* Aldous-Broder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aldous-Broder.swift"; sourceTree = "<group>"; };
 		DC84681824DDC32900263757 /* Adjacency List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjacency List.swift"; sourceTree = "<group>"; };
 		DC84681A24DDEB1800263757 /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
 		DC84681D24DDF88B00263757 /* Maze Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maze Generator.swift"; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		DC382AD824DD87CF00BE21C6 = {
 			isa = PBXGroup;
 			children = (
-				DC382AE324DD87CF00BE21C6 /* GoreGraphicsStuff */,
+				DC382AE324DD87CF00BE21C6 /* MazeGenerator */,
 				DC382AE224DD87CF00BE21C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,31 +63,32 @@
 		DC382AE224DD87CF00BE21C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC382AE124DD87CF00BE21C6 /* GoreGraphicsStuff.app */,
+				DC382AE124DD87CF00BE21C6 /* MazeGenerator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC382AE324DD87CF00BE21C6 /* GoreGraphicsStuff */ = {
+		DC382AE324DD87CF00BE21C6 /* MazeGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				DC382AF824DD94CE00BE21C6 /* GoreGraphicsStuff.entitlements */,
+				DC382AF824DD94CE00BE21C6 /* MazeGenerator.entitlements */,
 				DC382AE424DD87CF00BE21C6 /* AppDelegate.swift */,
 				DC382AE624DD87CF00BE21C6 /* SceneDelegate.swift */,
-				DC84681F24E00E3100263757 /* MazeView.swift */,
 				DC382AFD24DDA18100BE21C6 /* Maze Stuff */,
 				DC382AEA24DD87CF00BE21C6 /* Main.storyboard */,
 				DC382AED24DD87D100BE21C6 /* Assets.xcassets */,
 				DC382AEF24DD87D100BE21C6 /* LaunchScreen.storyboard */,
 				DC382AF224DD87D100BE21C6 /* Info.plist */,
 			);
-			path = GoreGraphicsStuff;
+			path = MazeGenerator;
 			sourceTree = "<group>";
 		};
 		DC382AFD24DDA18100BE21C6 /* Maze Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				DC84681F24E00E3100263757 /* MazeView.swift */,
 				DC84681D24DDF88B00263757 /* Maze Generator.swift */,
+				DC4F7ECD24E44D6F00B043E9 /* Generator Algorithms */,
 				DC382AFE24DDA19100BE21C6 /* Stack.swift */,
 				DC382B0024DDA19D00BE21C6 /* MazeCell.swift */,
 				DC84681A24DDEB1800263757 /* Maze.swift */,
@@ -92,12 +97,21 @@
 			path = "Maze Stuff";
 			sourceTree = "<group>";
 		};
+		DC4F7ECD24E44D6F00B043E9 /* Generator Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				DC4F7ECE24E44D8000B043E9 /* Recursive Backtracker.swift */,
+				DC69BCAB24E44E6E00720331 /* Aldous-Broder.swift */,
+			);
+			path = "Generator Algorithms";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC382AE024DD87CF00BE21C6 /* GoreGraphicsStuff */ = {
+		DC382AE024DD87CF00BE21C6 /* MazeGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC382AF524DD87D100BE21C6 /* Build configuration list for PBXNativeTarget "GoreGraphicsStuff" */;
+			buildConfigurationList = DC382AF524DD87D100BE21C6 /* Build configuration list for PBXNativeTarget "MazeGenerator" */;
 			buildPhases = (
 				DC382ADD24DD87CF00BE21C6 /* Sources */,
 				DC382ADE24DD87CF00BE21C6 /* Frameworks */,
@@ -107,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = GoreGraphicsStuff;
+			name = MazeGenerator;
 			productName = GoreGraphicsStuff;
-			productReference = DC382AE124DD87CF00BE21C6 /* GoreGraphicsStuff.app */;
+			productReference = DC382AE124DD87CF00BE21C6 /* MazeGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +133,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = iron59;
 				TargetAttributes = {
 					DC382AE024DD87CF00BE21C6 = {
@@ -127,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC382ADC24DD87CF00BE21C6 /* Build configuration list for PBXProject "GoreGraphicsStuff" */;
+			buildConfigurationList = DC382ADC24DD87CF00BE21C6 /* Build configuration list for PBXProject "MazeGenerator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC382AE024DD87CF00BE21C6 /* GoreGraphicsStuff */,
+				DC382AE024DD87CF00BE21C6 /* MazeGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -167,8 +181,10 @@
 				DC84681924DDC32900263757 /* Adjacency List.swift in Sources */,
 				DC382AFF24DDA19100BE21C6 /* Stack.swift in Sources */,
 				DC84681E24DDF88B00263757 /* Maze Generator.swift in Sources */,
+				DC4F7ECF24E44D8000B043E9 /* Recursive Backtracker.swift in Sources */,
 				DC382AE724DD87CF00BE21C6 /* SceneDelegate.swift in Sources */,
 				DC84681B24DDEB1800263757 /* Maze.swift in Sources */,
+				DC69BCAC24E44E6E00720331 /* Aldous-Broder.swift in Sources */,
 				DC84682024E00E3100263757 /* MazeView.swift in Sources */,
 				DC382B0124DDA19D00BE21C6 /* MazeCell.swift in Sources */,
 			);
@@ -222,6 +238,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -282,6 +299,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -314,16 +332,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GoreGraphicsStuff/GoreGraphicsStuff.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MazeGenerator/MazeGenerator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78D5X4L92;
-				INFOPLIST_FILE = GoreGraphicsStuff/Info.plist;
+				INFOPLIST_FILE = MazeGenerator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = iron59.GoreGraphicsStuff;
+				PRODUCT_BUNDLE_IDENTIFIER = iron59.MazeGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,16 +353,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = GoreGraphicsStuff/GoreGraphicsStuff.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MazeGenerator/MazeGenerator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G78D5X4L92;
-				INFOPLIST_FILE = GoreGraphicsStuff/Info.plist;
+				INFOPLIST_FILE = MazeGenerator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = iron59.GoreGraphicsStuff;
+				PRODUCT_BUNDLE_IDENTIFIER = iron59.MazeGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -355,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC382ADC24DD87CF00BE21C6 /* Build configuration list for PBXProject "GoreGraphicsStuff" */ = {
+		DC382ADC24DD87CF00BE21C6 /* Build configuration list for PBXProject "MazeGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC382AF324DD87D100BE21C6 /* Debug */,
@@ -364,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC382AF524DD87D100BE21C6 /* Build configuration list for PBXNativeTarget "GoreGraphicsStuff" */ = {
+		DC382AF524DD87D100BE21C6 /* Build configuration list for PBXNativeTarget "MazeGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC382AF624DD87D100BE21C6 /* Debug */,

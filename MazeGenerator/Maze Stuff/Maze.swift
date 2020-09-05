@@ -1,6 +1,6 @@
 //
 //  AdjacencyListMaze.swift
-//  GoreGraphicsStuff
+//  MazeGenerator
 //
 //  Created by Felix Weber on 07/08/2020.
 //  Copyright © 2020 iron59. All rights reserved.
@@ -40,9 +40,8 @@ class Maze {
         for y in 0...self.size.y {
             for x in 0...self.size.x {
                 let currentCell = MazeCell(x, y)
-//                currentCell.addNeigbours(self.calculateNeigbours(of: currentCell))
                 self.indices[currentCell.index(self.size)] = currentCell
-                
+                self.graph.graph[AdjacencyListNode(currentCell)] = []
             }
         }
     }
@@ -51,7 +50,7 @@ class Maze {
         let c = self.indices[a.index(self.size)]!
         let x = self.indices[b.index(self.size)]!
         
-        self.graph.addEdge(from: c, to: x, directed: true)
+        self.graph.addEdge(from: c, to: x, directed: false)
     }
 }
 
@@ -60,9 +59,9 @@ extension Maze: CustomDebugStringConvertible {
         return graph.debugDescription
     }
 }
-
-extension Maze: CustomStringConvertible {
-    public var description: String {
-        return "\(graph)"
-    }
-}
+//
+//extension Maze: CustomStringConvertible {
+//    public var description: String {
+//        return "\(graph)"
+//    }
+//}

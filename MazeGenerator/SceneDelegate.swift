@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  GoreGraphicsStuff
+//  MazeGenerator
 //
 //  Created by Felix Weber on 07/08/2020.
 //  Copyright © 2020 iron59. All rights reserved.
