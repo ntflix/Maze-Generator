@@ -39,6 +39,8 @@
 		DC84681A24DDEB1800263757 /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
 		DC84681D24DDF88B00263757 /* Maze Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maze Generator.swift"; sourceTree = "<group>"; };
 		DC84681F24E00E3100263757 /* MazeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
+		DF9D445C2504E7540006F9F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF9D445E2504E7C20006F9F1 /* Maze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maze.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 		DC382AD824DD87CF00BE21C6 = {
 			isa = PBXGroup;
 			children = (
+				DF9D445C2504E7540006F9F1 /* README.md */,
+				DF9D445D2504E7AA0006F9F1 /* Readme_Files */,
 				DC382AE324DD87CF00BE21C6 /* MazeGenerator */,
 				DC382AE224DD87CF00BE21C6 /* Products */,
 			);
@@ -104,6 +108,14 @@
 				DC69BCAB24E44E6E00720331 /* Aldous-Broder.swift */,
 			);
 			path = "Generator Algorithms";
+			sourceTree = "<group>";
+		};
+		DF9D445D2504E7AA0006F9F1 /* Readme_Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF9D445E2504E7C20006F9F1 /* Maze.png */,
+			);
+			path = Readme_Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
