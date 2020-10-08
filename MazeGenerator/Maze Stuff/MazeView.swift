@@ -21,25 +21,38 @@ class MazeView: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        regenerate()
+    }
+    
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        if presses.first?.type == UIPress.PressType.init(rawValue: 2044) {
+            // if spacebar pressed
+            regenerate()
+        }
+    }
+    
+    func regenerate() {
         if let layers = self.view.layer.sublayers {
             for layer in layers {
                 layer.removeFromSuperlayer()
             }
         }
-        
-//        self.view.layer.removeFromSuperlayer()
         generateMaze()
     }
     
     func generateMaze() {
-//        let algorithms: [(MazeGeneratorAlgorithm.Type, CGColor)] = [ (AldousBroder.self, UIColor.systemYellow.cgColor), (RecursiveBacktracker.self, UIColor.systemTeal.cgColor) ]
-//        let chosenAlgorithm = algorithms.randomElement()!
-        let chosenAlgorithm = (RecursiveBacktracker.self, UIColor.systemPink.cgColor)
-        self.maze = MazeGenerator(XYSize(46, 32), algorithm: chosenAlgorithm.0).maze
+        let algorithms: [(MazeGeneratorAlgorithm.Type, CGColor)] = [
+            (AldousBroder.self,         UIColor.systemYellow.cgColor),
+            (RecursiveBacktracker.self, UIColor.systemPink.cgColor)
+        ]
+        
+        let chosenAlgorithm = algorithms.randomElement()!
+//        let chosenAlgorithm = (RecursiveBacktracker.self, UIColor.systemPink.cgColor)
+        self.maze = MazeGenerator(XYSize(25, 25), algorithm: chosenAlgorithm.0).maze
         self.view.layer.addSublayer(drawMaze(self.maze!, color: chosenAlgorithm.1))
     }
     
-    func drawMaze(_ maze: Maze, color: CGColor = UIColor.systemTeal.cgColor, lineWidth: CGFloat = 2.5, cellSize: CGFloat = 20) -> CALayer {
+    func drawMaze(_ maze: Maze, color: CGColor = UIColor.systemTeal.cgColor, lineWidth: CGFloat = 5, cellSize: CGFloat = 25) -> CALayer {
         let drawLayer = CALayer()
         
         let mazeLayer = CAShapeLayer()
